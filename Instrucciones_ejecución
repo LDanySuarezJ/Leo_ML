@@ -1,0 +1,71 @@
+Para ejecutar el script app.py que se encuentra en el directorio MeliAPI/src que obtiene la información del equipo se debe crear primero el ambiente virtual
+posicionado en el directorio donde se encuentra meli.py con el siguiente comando:
+
+# source venv/bin/activate - Activa el ambiente vitual
+
+# python3 ./app.py - Ejecuta el script que obtiene la información que entrega la siguiente salida, lo cual indica que está listo para recibir las peticiones POST
+con la información que recibirá del host sender
+
+
+
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Serving Flask app 'app'
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 238-521-717
+
+
+Para ejecutar el script meli.py que se encuentra en el directorio MeliLeo que obtiene la información del equipo se debe crear primero el ambiente virtual
+posicionado en el directorio donde se encuentra meli.py con el siguiente comando:
+
+# source venv/bin/activate - Activa el ambiente vitual
+
+# python3 ./meli.py - Ejecuta el script que obtiene la información que entrega la siguiente salida, que nos muestra como código de envió 200 que significa
+                      que la información fue enviada correctamente
+
+
+======================================== Host Info ========================================
+Hostname                     danydebian
+IP Address                   127.0.1.1
+os.name                      posix
+sys.platform                 linux
+platform.system()            Linux
+sysconfig.get_platform()     linux-x86_64
+platform.machine()           x86_64
+platform.architecture()      ('64bit', 'ELF')
+======================================== CPU Info ========================================
+Physical cores: 4
+Total cores: 4
+Max Frequency: 0.00Mhz
+Min Frequency: 0.00Mhz
+Current Frequency: 2918.40Mhz
+CPU Usage Per Core:
+Core 0 : 2.0%
+Core 1 : 2.1%
+Core 2 : 2.0%
+Core 3 : 3.0%
+Total CPU Usage: 8.0%
+=================================== Usuarios conectados ===================================
+dany     tty2         2022-08-08 12:47 (tty2)
+
+
+Respuesta de API : 
+<Response [200]>
+b'{\n  "mensaje": "ok"\n}\n'
+
+
+Una vez enviada la información, MeliAPI mostrará el POST recibido:
+
+sys.plWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Serving Flask app 'app'
+ * Debug mode: on
+ * Running on http://127.0.0.1:5000 (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 238-521-717
+***********
+{"host": {"Hostname": "danydebian", "IP Address": "127.0.1.1", "os-name ": "posix", "sys-platform": "linux", "platform-system": "Linux", "sysconfig-get_platform": "linux-x86_64", "platform-machine": "x86_64", "platform-architecture": "('64bit', 'ELF')"}, "cpu": {"Physical cores": "4", "otal cores": "4", "Max Frequency": "0.00Mhz", "Min Frequency": "0.00Mhz", "Current Frequency": "2918.40Mhz", "CPU Usage Per Core": [{"core0": "2.0%"}, {"core1": "2.1%"}, {"core2": "2.0%"}, {"core3": "3.0%"}], "Total CPU Usage": "0.0%"}, "user": {"user": "dany     tty2         2022-08-08 12:47 (tty2)"}}
+None
+127.0.0.1 - - [08/Aug/2022 12:57:37] "POST /api HTTP/1.1" 200 -
