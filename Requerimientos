@@ -1,0 +1,22 @@
+1. Maquina virtual - Debian 11
+Enlace de descarga: https://www.debian.org/distrib/
+
+2. Módulos python necesarios en los ambientes vituales para API endpoint y API sender
+- flask
+  - jsonify
+  - request
+- requests
+- psutil
+- urllib3
+- virtualenv
+- os
+- json
+- socket
+- platform
+- sys
+- subprocess
+- datetime
+
+
+3. Versión de python 
+3.9
