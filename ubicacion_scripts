@@ -1,0 +1,11 @@
+Usuario: dany
+Passowrd: danymuse
+Password superuser: danyukrock
+
+Ubicación de los directorios:
+
+/home/dany/MeliLeo
+
+Contiene el script meli.py que extrae los datos del equipo
+
+/home/dany/MeliAPI/src - Contiene el archivo app.py de la API que consume el request con el json con los datos enviados por meli.py
